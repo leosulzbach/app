@@ -1,20 +1,20 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+//import ViewEffect from './src/pages/ViewEffect';
+import ViewImages from './src/pages/ViewImages';
+// import ViewState from './src/pages/ViewState';
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+return(
+  <>
+  {/* <ViewState /> */}
+  <ViewImages/>
+  <StatusBar
+    backgroundColor='#042940'
+    translucent={false}
+    style='light' />
+  </>
+)
+  
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
