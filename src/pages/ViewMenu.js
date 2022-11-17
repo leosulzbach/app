@@ -1,13 +1,16 @@
 import React from 'react';
-import { View, StyleSheet } from 'react-native';
-import { CustomButton } from '../components/CustomButton';
+import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
+//import { CustomButton } from '../components/CustomButton';
 
 const ViewMenu = (props) => {
+
     return(
         <View style={styles.container}>
-            <CustomButton
-             onPress={()=> props.navigation.navigate("ViewState")}
-             label="Navegar para ViewState"/>
+           <TouchableOpacity 
+            onPress={()=> props.navigation.navigate("ViewState")}
+            style={styles.button}>
+            <Text style={styles.textButton}>Mudar para ViewState</Text>
+        </TouchableOpacity>
         </View>
     );
 }

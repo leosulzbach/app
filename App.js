@@ -18,7 +18,7 @@ return(
   <>
   <NavigationContainer>
     <Stack.Navigator screenOptions={{headerShown: true}}>
-          <Stack.Screen name="ViewNav1" component={ViewMenu}/>
+          <Stack.Screen name="ViewMenu" component={ViewMenu}/>
           <Stack.Screen name="ViewState" component={ViewState}/>
           <Stack.Screen name="ViewImages" component={ViewImages}/>
           <Stack.Screen name="ViewEffect" component={ViewEffect}/>

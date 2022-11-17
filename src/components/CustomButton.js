@@ -1,7 +1,7 @@
 
 import { StyleSheet, Text, TouchableOpacity } from 'react-native';
 
-export default function CustomButton({label, onPress}){
+export default function CustomButton(label, onPress){
     return(
         <TouchableOpacity 
             onPress={onPress}
