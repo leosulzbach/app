@@ -1,19 +1,18 @@
 import React from 'react';
-import {SafeAreaView, View} from 'react-native';
+import {SafeAreaView, View, Image} from 'react-native';
+import LogoCrieTi from '../../assets/logo-crie-ti.svg';
 
-export const ViewImages = () => {
+const ViewImages = () => {
     return (
-        <View style={{flex: 1, justifyContent: 'center'}}>
+        <View style={{flex: 1, justifyContent: 'center', backgroundColor: '#8A2BE2', alignItems: 'center'}}>
             <SafeAreaView>
-                <Image 
-                    resizeMode="contain"
-                    style={{width: 200, height: 200}}
-                    source = {{
-                        uri: 'https://static.vecteezy.com/system/resources/previews/001/191/989/non_2x/circle-logo-png.png',
-                    }}>
-                </Image>
+
+                <LogoCrieTi width="200" height="200" />
             </SafeAreaView>    
         </View>
     );
 }
+
+export default ViewImages;
+
 

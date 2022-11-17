@@ -7,9 +7,9 @@ export default function ViewState() {
 
     const [count, setCont] = useState(0);
     const [user, setUser] = useState({
-      name: "Mariele",
-      age: 22,
-      city: "Lajeado"
+      name: "Leonardo",
+      age: 19,
+      city: "Sulzbach"
     })
   
     function increment() {
